@@ -4,7 +4,7 @@ description: "Learn more about what I do"
 image: "/images/sustainable.jpg"
 ---
 
-# t3ma
+# WEINER
 
 Hi! I'm t3ma, a low-power computing enthusiast and sustainability advocate. I focus on energy-efficient technology solutions and minimal computing practices.
 
