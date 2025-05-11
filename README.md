@@ -7,7 +7,7 @@ https://snorri.vercel.app/
 - Edit .md files in VS Code or Obsidian on your computer
 
 When you want to push something live to the internet:
-- Run `vercel` in terminal at the level of the `/snorri` repo folder
+- Run `vercel --prod` in terminal at the level of the `/snorri` repo folder
 - Commit and push to github (back it up) in VS Code or by running `git commit -a -m "my commit message"`
 
 ## 🚀 Project Structure
