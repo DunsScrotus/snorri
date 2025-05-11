@@ -1,13 +1,27 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import BlogCard from '../components/BlogCard.astro';
+import Layout from '../../layouts/Layout.astro';
+import BlogCard from '../../components/BlogCard.astro';
 import { getCollection } from 'astro:content';
 
-const posts = await getCollection('blog');
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  const tags = [...new Set(posts.flatMap(post => post.data.tags))];
+  
+  return tags.map(tag => ({
+    params: { tag },
+    props: { 
+      posts: posts.filter(post => post.data.tags.includes(tag)),
+      tag 
+    },
+  }));
+}
+
+const { posts, tag } = Astro.props;
 ---
 
-<Layout title="Snori of the Stars">
+<Layout title={`Posts tagged with "${tag}" - Eco Blog`}>
 	<main>
+		<h1>Posts tagged with "{tag}"</h1>
 		<div class="blog-grid">
 			{posts.map(post => (
 				<a href={`/${post.slug}`} class="card-link">
@@ -27,6 +41,10 @@ const posts = await getCollection('blog');
 		padding: 2rem;
 		max-width: 1400px;
 		margin: 0 auto;
+	}
+	h1 {
+		margin-bottom: 2rem;
+		color: var(--text-primary);
 	}
 	.blog-grid {
 		display: grid;
