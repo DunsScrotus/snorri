@@ -1,12 +1,14 @@
-# Snori of the Stars
+# Snorri of the Stars
 
 https://snorri.vercel.app/
 
+## To edit:
 
-Folders to edit:
-- /src/content/blog
-- /src/content/pages
-- /public/images
+- Edit .md files in VS Code or Obsidian on your computer
+
+When you want to push something live to the internet:
+- Run `vercel` in terminal at the level of the `/snorri` repo folder
+- Commit and push to github (back it up) in VS Code or by running `git commit -a -m "my commit message"`
 
 ## 🚀 Project Structure
 
@@ -15,11 +17,15 @@ Inside of your Astro project, you'll see the following folders and files:
 ```text
 /
 ├── public/
-	└── images/
+│	└── images/
+│   		└── Image files live here
 ├── src/
 │	└── components/
 │	└── content/
+│   	└── blog/
+│   		└── Article .md files live here
 │   	└── pages/
+│   		└── .md files for other pages live here
 │   └── layouts
 │   └── pages
 └── package.json
