@@ -6,6 +6,5 @@ import { defineConfig } from 'astro/config';
 // Deploying from Github Pages
 // https://docs.astro.build/en/guides/deploy/github/
 export default defineConfig({
-	site: 'https://snorri-space.github.io',
-	base: 'snorri'
+	site: 'https://snorri-space.github.io'
 });
