@@ -1,9 +1,9 @@
 ---
-title: "Renewable Energy at Home"
+title: "Bunk Ass MFs"
 description: "Guide to implementing renewable energy solutions in your home."
 image: "/images/energy.jpg"
 pubDate: 2024-02-15
-tags: ["energy", "home", "sustainability"]
+tags: ["wack shit", "home", "sustainability"]
 ---
 
 # Renewable Energy: Power Your Home Sustainably
