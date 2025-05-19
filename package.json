@@ -9,6 +9,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@fontsource/bluu-next": "^5.2.5",
     "astro": "^5.7.12"
   }
 }

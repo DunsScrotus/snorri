@@ -1,5 +1,5 @@
 ---
-title: Services
+title: Offerings
 description: What I offer
 image: /images/sustainable.jpg
 ---

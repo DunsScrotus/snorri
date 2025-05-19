@@ -1,10 +1,13 @@
-// @ts-check
-import { defineConfig } from 'astro/config';
-
+// Config reference
 // https://astro.build/config
 
-// Deploying from Github Pages
-// https://docs.astro.build/en/guides/deploy/github/
+import { defineConfig } from 'astro/config';
+
+
+
 export default defineConfig({
-	site: 'https://snorri-space.github.io'
+	site: 'https://snorri.vercel.app',
+	redirects: {
+		'/blog/[...slug]': '/writing/[...slug]'
+	}
 });

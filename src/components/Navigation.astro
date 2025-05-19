@@ -1,0 +1,14 @@
+---
+import { getEntry } from 'astro:content';
+const about = await getEntry('page', 'about');
+//const writing = await getEntry('page', 'writing');
+const offerings = await getEntry('page', 'offerings');
+---
+
+<a href={`/${about.slug}`} class="nav-link">{about.data.title}</a>
+<a href="/writing" class="nav-link">Writing</a>
+<!-- <a href={`/${writing.slug}`} class="nav-link">{writing.data.title}</a> -->
+<a href={`/${offerings.slug}`} class="nav-link">{offerings.data.title}</a>
+<!-- <a href="/tags" class="nav-link">. . .</a> -->
+<!-- <a href="/tags" class="nav-link">Tags</a> -->
+

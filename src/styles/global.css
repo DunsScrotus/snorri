@@ -1,0 +1,151 @@
+/* Colors -------------------------------- */
+
+:root {
+	--text-primary: #3D2B20;
+	--text-secondary: #57483F;
+	--background-primary: #E2DED7;
+	--background-secondary: #FFFFFF;
+	--accent-1: #CAD279;
+	--accent-2: #E4C581;
+	--accent-3: #D4C6CD;
+}
+
+/* Typography ==================================================== */
+/* Register your custom font family and tell the browser where to find it. */
+@font-face {
+	font-family: 'Ronzino';
+	src: url('/fonts/Ronzino/Ronzino-Regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+p{
+	margin: .5rem 0 1rem;
+}
+
+h1{
+	font-size: 2.4rem;
+	line-height: 100%;
+	font-weight: normal;
+	margin: 0 0 1rem;
+}
+h2, .h2{
+	font-size: 1.77rem;
+	line-height: 110%;
+	font-weight: normal;
+	margin: 3.33rem 0 1rem;
+}
+h3, .h3{
+	font-size: 1.3rem;
+	line-height: 112%;
+	font-weight: normal;
+	margin: 1.77rem 0 .5rem;
+}
+
+small, .small{
+	font-size: .88rem;
+}
+
+/* Layout ==================================================== */
+
+html {
+	font-family: Ronzino, system-ui, sans-serif;
+	background: var(--background-primary);
+	color: var(--text-primary);
+	font-size: 18px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+html main, html article {
+	padding: .9rem;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.content{
+	line-height: 1.4rem;
+}
+
+a{
+	color: inherit;
+}
+
+a:hover{
+	text-decoration: none;
+}
+/* Navigation ==================================================== */
+.logo {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	margin: 0;
+	font-family: 'Bluu Next', sans-serif;
+	font-size: 1.4rem;
+	color: var(--text-primary);
+	text-decoration: none;
+}
+.logo:hover {
+	opacity: 0.8;
+}
+
+.nav-link {
+	color: var(--text-primary);
+	text-decoration: none;
+	padding: 0.3rem .6rem;
+	border: 1px dotted var(--text-primary);
+	transition: background-color 0.2s ease;
+}
+.nav-link:hover {
+	background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Classes ==================================================== */
+.hidden{
+	visibility: hidden;
+	height: 0;
+	width: 0;
+}
+.section{
+	margin-bottom: 3.3rem;
+}
+.section-heading{
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+.button{
+	display: block;
+	width: 100%;
+	max-width: 500px;
+	padding: .6rem 1rem;
+	margin-top: 1rem;
+	border-radius: .2rem;
+	text-decoration: none;
+}
+.button.newsletter{
+	background: var(--accent-1);
+}
+.button.booking{
+	background: var(--accent-3);
+}
+
+.image-container {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }

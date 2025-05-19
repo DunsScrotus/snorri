@@ -1,0 +1,41 @@
+---
+import Navigation from './Navigation.astro';
+---
+<header>
+	<div class="nav-logo">
+		<img src="/images/placeholder logo.png" alt="Bunny in watercolor">
+		<a href="/" class="logo">
+			Snorri of the Stars
+		</a>
+	</div>
+	<nav class="nav-links">
+		<Navigation />
+  	</nav>
+</header>
+
+<style>
+	header {
+		padding: 1rem 1rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 1rem;
+		max-width: 1400px;
+		margin: 0 auto;
+	}
+	.nav-logo{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.nav-logo img{
+		width: 3.4rem;
+		height: auto;
+		margin-bottom: .16rem;
+	}
+	.nav-links {
+		display: flex;
+		align-items: center;
+		gap: 1.5rem;
+	}
+</style>
