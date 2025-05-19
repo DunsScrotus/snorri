@@ -20,7 +20,7 @@ const { posts, tag } = Astro.props;
 ---
 
 <Layout title={`Posts tagged with "${tag}" - Eco Blog`}>
-	<main>
+	<main class="site">
 		<h1>Posts tagged with "{tag}"</h1>
 		<div class="blog-grid">
 			{posts.map(post => (
