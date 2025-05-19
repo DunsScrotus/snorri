@@ -4,7 +4,7 @@ import BlogCard from '../../components/BlogCard.astro';
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('blog');
+  const posts = await getCollection('writing');
   const tags = [...new Set(posts.flatMap(post => post.data.tags))];
   
   return tags.map(tag => ({

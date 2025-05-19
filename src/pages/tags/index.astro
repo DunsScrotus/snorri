@@ -2,7 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 
-const posts = await getCollection('blog');
+const posts = await getCollection('writing');
 const tags = [...new Set(posts.flatMap(post => post.data.tags))];
 const tagCounts = tags.reduce((acc, tag) => {
   acc[tag] = posts.filter(post => post.data.tags.includes(tag)).length;
