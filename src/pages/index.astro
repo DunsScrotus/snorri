@@ -3,6 +3,7 @@
 
 import Layout from '../layouts/Layout.astro';
 import BlogCard from '../components/BlogCard.astro';
+import Button from '../components/Button.astro';
 import { getCollection, getEntry } from 'astro:content';
 
 const home = await getEntry('page', 'home');
@@ -41,7 +42,7 @@ const { Content } = await home.render();
 					</a>
 				))}
 			</div>
-			<a class="button newsletter" href="">Sign up for email newsletter</a>
+			<Button title="Sign up for email newsletter" href="/newsletter" className="newsletter" icon="true"/>
 		</div>
 		<div class="section">
 			<div class="section-heading">
@@ -49,7 +50,7 @@ const { Content } = await home.render();
 				<a class="small" href="/offerings">See all</a>
 			</div>
 			<p>add section here</p>
-			<a class="button booking" href="">Book a consultation</a>
+			<Button title="Book a consultation" href="/booking" className="booking" icon="true"/>
 		</div>
 	</main>
 </Layout>

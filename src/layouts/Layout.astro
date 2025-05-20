@@ -1,5 +1,6 @@
 ---
 import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 import '@fontsource/bluu-next';
 import '../styles/style.scss';
 
@@ -24,9 +25,7 @@ const { title } = Astro.props;
 	<body>
 		<Header/>
 		<slot />
-		<footer>
-			<p>&copy; 2025, Snorri of the Stars. </p>
-		</footer>
+		<Footer/>
 	</body>
 </html>
 <style>

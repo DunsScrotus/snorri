@@ -30,12 +30,13 @@ body{
 }
 
 .nav-link {
-	color: var(--text-primary);
+	color: var(--color-foreground);
 	text-decoration: none;
 	padding: 0.3rem .6rem;
-	border: 1px dotted var(--text-primary);
-	transition: background-color 0.2s ease;
+	border: 1px dotted var(--color-foreground);
+	transition: background-color 0.05s;
 }
 .nav-link:hover {
-	background-color: rgba(0, 0, 0, 0.05);
+	background-color: #DAD1C1;
+	border: 1px solid var(--color-foreground);
 }
