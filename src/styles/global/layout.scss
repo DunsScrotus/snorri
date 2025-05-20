@@ -1,0 +1,39 @@
+// General --------------------------------------------------------------------------------------------------------------
+body{
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.site{
+	padding: 1rem;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+// Navigation --------------------------------------------------------------------------------------------------------------
+
+.logo {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	margin: 0;
+	font-family: 'Bluu Next', sans-serif;
+	font-size: 1.4rem;
+	color: var(--text-primary);
+	text-decoration: none;
+}
+
+.nav-link {
+	color: var(--color-foreground);
+	text-decoration: none;
+	padding: 0.3rem .6rem;
+	border: 1px dotted var(--color-foreground);
+	transition: background-color 0.05s;
+}
+.nav-link:hover {
+	background-color: #DAD1C1;
+	border: 1px solid var(--color-foreground);
+}

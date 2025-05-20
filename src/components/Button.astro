@@ -1,0 +1,31 @@
+---
+interface Props {
+	title: string;
+	href: string;
+	icon: string;
+	className: string;
+}
+
+const { href, title, icon, className } = Astro.props;
+---
+<a class={`button ${className}`} href={href}>
+	{title}
+</a>
+
+<style>
+	.button{
+	display: block;
+	max-width: 500px;
+	padding: .6rem 1rem;
+	margin-top: 1rem;
+	border-radius: .2rem;
+	text-decoration: none;
+
+	&.newsletter{
+		background: var(--color-accent-1);
+	}
+	&.booking{
+		background: var(--color-accent-3);
+	}
+}
+</style>

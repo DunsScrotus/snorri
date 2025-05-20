@@ -1,0 +1,52 @@
+---
+import Navigation from './Navigation.astro';
+import Button from './Button.astro';
+---
+<footer>
+	<a href="/" class="logo">
+		Snorri of the Stars
+	</a>
+	<div class="buttons">
+		<Button title="Book a consultation" href="/booking" className="booking" icon="true"/>
+		<Button title="Sign up for email newsletter" href="/newsletter" className="newsletter" icon="true"/>
+	</div>
+
+	<small class="credits">Logo by Casi Tanko <br>
+		Website by Alex Nawotka</small>
+	<small>&copy; 2025, Snorri of the Stars. </small>
+</footer>
+
+<style>
+	footer {
+		padding: 1rem;
+		display: flex;
+		flex-direction: column;
+		/* align-items: center; */
+		gap: .5rem;
+		max-width: 1400px;
+		margin: 4rem 0 0;
+	}
+	.buttons{
+		margin-bottom: 2rem;
+	}
+	.credits{
+		text-align: right;
+		width: 100%;
+		line-height: 120%;
+	}
+	.nav-logo{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.nav-logo img{
+		width: 3.4rem;
+		height: auto;
+		margin-bottom: .16rem;
+	}
+	.nav-links {
+		display: flex;
+		align-items: center;
+		gap: 1.5rem;
+	}
+</style>
