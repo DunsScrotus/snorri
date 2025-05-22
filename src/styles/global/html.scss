@@ -13,6 +13,10 @@ body{
 	@include text;
 }
 
+::selection{
+    background-color: var(--color-accent-1)
+}
+
 p, ul, ol, h1, h2, h3, h4, h5, h6{
     margin-top:0;
 
