@@ -7,8 +7,6 @@ body{
 	margin: 0;
 	padding: 0;
 	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
 }
 
 .site{
@@ -17,8 +15,12 @@ body{
 	margin: 0 auto;
 
 	@include is-max-tablet{
-		padding: 1rem;
+		padding: 1.2rem;
 	}
+}
+
+.content{
+	width: 100%;
 }
 
 // Navigation --------------------------------------------------------------------------------------------------------------
@@ -45,6 +47,6 @@ body{
 	transition: background-color 0.05s;
 }
 .nav-link:hover {
-	background-color: #DAD1C1;
+	// background-color: #DAD1C1;
 	border: 1px solid var(--color-foreground);
 }
