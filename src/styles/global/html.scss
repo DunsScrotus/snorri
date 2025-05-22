@@ -1,3 +1,4 @@
+@use "../base/vars" as *;
 @use "../base/mixins" as *;
 @use "../base/typography" as *;
 
@@ -5,7 +6,7 @@
 html {
 	background: var(--color-background);
 	color: var(--color-foreground);
-	font-size: 16px;
+	font-size: var(--text-size);
 }
 
 body{
@@ -24,6 +25,7 @@ p, ul, ol, h1, h2, h3, h4, h5, h6{
 
 p{
 	margin: .5rem 0 1rem;
+    @include text;
 }
 
 h1, .heading-1{ 

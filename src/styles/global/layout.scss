@@ -1,3 +1,7 @@
+@use "../base/vars" as *;
+@use "../base/mixins" as *;
+@use "../base/typography" as *;
+
 // General --------------------------------------------------------------------------------------------------------------
 body{
 	margin: 0;
@@ -8,9 +12,13 @@ body{
 }
 
 .site{
-	padding: 1rem;
+	padding: 2rem;
 	max-width: 800px;
 	margin: 0 auto;
+
+	@include is-max-tablet{
+		padding: 1rem;
+	}
 }
 
 // Navigation --------------------------------------------------------------------------------------------------------------
