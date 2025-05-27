@@ -1,52 +1,40 @@
-@use "vars" as *;
-@use "mixins" as *;
-
-
 // Font family -------------------------------------------------------------------
 // Register your custom font family and tell the browser where to find it.
-	@font-face {
-		font-family: 'Ronzino';
-		src: url('/fonts/Ronzino/Ronzino-Regular.woff2') format('woff2');
-		font-weight: normal;
-		font-style: normal;
-		font-display: swap;
-	}
-	@font-face {
-		font-family: 'Ronzino';
-		src: url('/fonts/Ronzino/Ronzino-Oblique.woff2') format('woff2');
-		font-weight: normal;
-		font-style: italic;
-		font-display: swap;
-	}
-	@font-face {
-		font-family: 'Ronzino';
-		src: url('/fonts/Ronzino/Ronzino-Medium.woff2') format('woff2');
-		font-weight: bold;
-		font-style: normal; 
-		font-display: swap;
-	}
-	@font-face {
-		font-family: 'Ronzino';
-		src: url('/fonts/Ronzino/Ronzino-MediumOblique.woff2') format('woff2');
-		font-weight: bold;
-		font-style: italic; 
-		font-display: swap;
-	}
+@font-face {
+	font-family: 'Ronzino';
+	src: url('/fonts/Ronzino/Ronzino-Regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Ronzino';
+	src: url('/fonts/Ronzino/Ronzino-Oblique.woff2') format('woff2');
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Ronzino';
+	src: url('/fonts/Ronzino/Ronzino-Medium.woff2') format('woff2');
+	font-weight: bold;
+	font-style: normal; 
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Ronzino';
+	src: url('/fonts/Ronzino/Ronzino-MediumOblique.woff2') format('woff2');
+	font-weight: bold;
+	font-style: italic; 
+	font-display: swap;
+}
 
-// Font size -------------------------------------------------------------------
+// font size -------------------------------------------------------------------
 
 @mixin text {
 	font-family: Ronzino, system-ui, sans-serif;
-	font-size: 1.125rem;
+	font-size: 18px;
 	line-height: 140%;
-	
-	@include is-max-tablet{
-		// font-size: 18px;
-	}
-
-	@include is-phone{
-		font-size: 1rem;
-	}
 }
 @mixin text-small{
 	font-size: .88rem;

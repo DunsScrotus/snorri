@@ -17,11 +17,9 @@ const { Content } = await page.render();
 <Layout title={page.data.title}>
   <article class="site page">
     <h1>{page.data.title}</h1>
-    
-    {page.data.image && <div class="image-container">
+    <div class="image-container">
       <img src={page.data.image} alt={page.data.title} />
-    </div> }
-    
+    </div>
     <div class="content">
       <Content />
     </div>
