@@ -2,6 +2,7 @@
 import Navigation from './Navigation.astro';
 import Button from './Button.astro';
 
+const year = new Date().getFullYear()
 const { links, booking_link, newsletter_link } = Astro.props;
 ---
 <footer>
@@ -13,8 +14,10 @@ const { links, booking_link, newsletter_link } = Astro.props;
 		<Button title={newsletter_link.title} href={newsletter_link.url} className="newsletter" icon={newsletter_link.icon} newTab="_blank"/>
 	</div>
 
+	<p>Email me — info (at) snorri (dot) rest</p>
+
 	<div class="bottom">
-		<small class="copyright">&copy; 2025, Snorri of the Stars. </small>
+		<small class="copyright">&copy; {year}, Snorri of the Stars. </small>
 		<small class="credits">
 			Logo by <a href="https://www.instagram.com/casi.ta/" target="_blank">Casi Tanko</a><br>
 			Website by <a href="https:/alexnawotka.com" target="_blank">Alex Nawotka</a>
