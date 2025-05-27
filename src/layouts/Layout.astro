@@ -52,6 +52,7 @@ const { title, description } = Astro.props;
 		/>
 	</head>
 	<body>
+		<Header/>
 		<slot />
 		<Footer links={settings.data.links} booking_link={settings.data.booking_link} newsletter_link={settings.data.newsletter_link}/>
 	</body>
