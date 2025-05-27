@@ -1,7 +1,7 @@
 ---
 title: About
-description: Learn more about what I do~
-image: /images/ori-placeholder.jpg
+description: Snorri of the Stars – Queer and trans astrology readings in Montreal
+image: /images/snorri-of-the-moss.jpg
 ---
 
 ## About me
