@@ -11,7 +11,7 @@ const posts = await getCollection('writing');
 const { Content } = await home.render();
 ---
 
-<Layout title="Snorri of the Stars">
+<Layout title={home.data.title} description={home.data.description}>
 	<main class="site">
 		<h1 class="hidden">Queer astrologer in Montreal</h1>
 		<div class="section intro">
