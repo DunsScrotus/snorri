@@ -13,8 +13,8 @@ const { Content } = await home.render();
 
 <Layout title="Snorri of the Stars">
 	<main class="site">
-		<h1 class="hidden">Queer astrologer in Montreal</h1>
-
+		<h1 class="logo">Snorri of the Stars</h1>
+		<h2 class="hidden">Queer astrologer in Montreal</h2>
 		<div class="section intro">
 			<p class="h3">{home.data.intro}</p>
 			<div class="image-container">
@@ -48,27 +48,25 @@ const { Content } = await home.render();
 </Layout>
 
 <style>
-	.blog-grid {
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		gap: 2rem;
+	.site{
+		height: 95vh;
+		max-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+		overflow: hidden;
+		max-width: 100%;
 	}
-	.card-link {
-		text-decoration: none;
+	.hidden{
+		height: 0;
+		position: absolute;
+
 	}
-	@media (max-width: 1200px) {
-		.blog-grid {
-			grid-template-columns: repeat(3, 1fr);
-		}
+
+	.logo{
+		font-size: 9vw;
 	}
-	@media (max-width: 900px) {
-		.blog-grid {
-			grid-template-columns: repeat(2, 1fr);
-		}
-	}
-	@media (max-width: 600px) {
-		.blog-grid {
-			grid-template-columns: 1fr;
-		}
-	}
+
 </style>
