@@ -2,19 +2,23 @@
 // https://astro.build/config
 
 import { defineConfig } from 'astro/config';
-
+import sitemap from '@astrojs/sitemap';
 
 
 import mdx from '@astrojs/mdx';
 
 
 
+import favicons from 'astro-favicons';
+
+
+
 export default defineConfig({
-  site: 'https://snorri.vercel.app',
+  site: 'https://snorri.rest',
 
   redirects: {
       // '/blog/[...slug]': '/writing/[...slug]'
-	},
+    },
 
-  integrations: [mdx()]
+  integrations: [mdx(), sitemap(), favicons()]
 });

@@ -1,19 +1,27 @@
 ---
 import Navigation from './Navigation.astro';
 import Button from './Button.astro';
+
+const { links, booking_link, newsletter_link } = Astro.props;
 ---
 <footer>
 	<a href="/" class="logo">
 		Snorri of the Stars
 	</a>
 	<div class="buttons">
-		<Button title="Book a consultation" href="/booking" className="booking" icon="true"/>
-		<Button title="Sign up for email newsletter" href="/newsletter" className="newsletter" icon="true"/>
+		<Button title={booking_link.title} href={booking_link.url} className="booking" icon={booking_link.icon} newTab="_blank"/>
+		<Button title={newsletter_link.title} href={newsletter_link.url} className="newsletter" icon={newsletter_link.icon} newTab="_blank"/>
 	</div>
 
-	<small class="credits">Logo by Casi Tanko <br>
-		Website by Alex Nawotka</small>
-	<small>&copy; 2025, Snorri of the Stars. </small>
+	<div class="bottom">
+		<small class="copyright">&copy; 2025, Snorri of the Stars. </small>
+		<small class="credits">
+			Logo by <a href="https://www.instagram.com/casi.ta/" target="_blank">Casi Tanko</a><br>
+			Website by <a href="https:/alexnawotka.com" target="_blank">Alex Nawotka</a>
+		</small>
+
+	</div>
+	
 </footer>
 
 <style>
@@ -21,19 +29,35 @@ import Button from './Button.astro';
 		padding: 1rem;
 		display: flex;
 		flex-direction: column;
-		/* align-items: center; */
 		gap: .5rem;
 		max-width: 1400px;
 		margin: 4rem 0 0;
 	}
 	.buttons{
 		margin-bottom: 2rem;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+
+		@media screen and (max-width: 640px){
+			display: block;
+		}
+	}
+	.bottom{
+		display: flex;
+		justify-content: space-between;
+		align-items: end;
+		
+		small{ line-height: 120%; }	
 	}
 	.credits{
 		text-align: right;
-		width: 100%;
-		line-height: 120%;
 	}
+
+
+
+
+
 	.nav-logo{
 		display: flex;
 		flex-direction: column;

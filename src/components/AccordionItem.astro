@@ -94,24 +94,31 @@ const Tag = tagName
             </>
           ) : (
             <>
-				<div class="title-inner">
-				{title}
-				<small>{subtitle}</small>
-				</div>
+				      <div class="title-inner">
+                {title}
+                <small>
+                  {subtitle}
+                </small>
+              </div>
 
               <span class="icon-plus">
-                <svg
-                  aria-hidden="true"
-                  width="20"
-                  height="2"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+					      <svg 
+                  width="20" 
+                  height="20" 
+                  viewBox="0 0 304 384"
+                  xmlns="http://www.w3.org/2000/svg" 
                 >
-                  <path fill="currentColor" d="M20 .5v1H0v-1z" />
-                </svg>
-                <svg width="2" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="currentColor" d="M1.5 20h-1V0h1z" />
-                </svg>
+						      <path fill="currentColor" d="M299 213H171v128h-43V213H0v-42h128V43h43v128h128v42z"/>
+					      </svg>
+					      <svg 
+                    aria-hidden="true"
+                    width="20" 
+                    height="20" 
+                    viewBox="0 0 304 384"
+                    xmlns="http://www.w3.org/2000/svg" 
+                  >
+                    <path fill="currentColor" d="M299 213H0v-42h299v42z"/>
+                  </svg>
               </span>
               
             </>
@@ -167,12 +174,14 @@ const Tag = tagName
   }
 
   :where(.wrapper) .content {
-    padding: 0 1rem 2rem;
+    padding: 0 0 2rem;
   }
 
   .acc-image{
 	width: 3.75rem;
-	height: 3.75rem;
+	height: auto;
+  vertical-align: middle;
+  border-radius: 8px;
   }
 
   .title {

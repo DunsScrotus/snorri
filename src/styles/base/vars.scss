@@ -1,8 +1,8 @@
 // Colors ----------------------------------------------------------------------
 :root {
-	--color-dark-primary: #3D2B20;
+	--color-dark-primary: #5D4131;
 	--color-dark-secondary: #57483F;
-	--color-light-primary: #E2DED7;
+	--color-light-primary: #F5F0EB;
 	--color-light-secondary: #FFFFFF;
 	--color-accent-1: #CAD279;
 	--color-accent-2: #E4C581;
@@ -20,10 +20,8 @@
 }
 
 // Media -----------------------------------------------------------------------
-:root {
-	--media-mini   : 360px;   // m
-	--media-phone  : 640px;   // sm
-	--media-tablet : 868px;   // md (original: 768px)
-	--media-laptop : 1180px;  // xl (original: 1024px)
-	--media-desktop: 1440px;  // xl
-}
+$media-mini   : 360px;   // m
+$media-phone  : 480px;   // sm
+$media-tablet : 640px;   // md 
+$media-laptop : 1024px;  // xl 
+$media-desktop: 1440px;  // xl
