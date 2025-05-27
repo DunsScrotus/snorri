@@ -1,7 +1,7 @@
 ---
 title: About
 description: Snorri of the Stars – Queer and trans astrology readings in Montreal
-image: /images/snorri-of-the-moss.jpg
+image: /images/ori-placeholder.jpg
 ---
 
 ## About me
@@ -16,7 +16,7 @@ My work emerges from years of ritual practice and engaged study across multiple 
 ## My practice
 Sessions with me are a collaborative process of meaning making. This means that I don't have all the answers -- you are the best authority on your own life! My job is to work with you to find what resonates with your experience and supports your self-understanding, keeping what is helpful and discarding what isn't. Your interpretation matters most, and I encourage you to let me know when you disagree with one of my interpretations or have a different interpretation. The dialogue that shapes a reading is often the most rewarding part, so trust yourself first and foremost! (◡‿◡✿)
 
-My lineage is mostly based in [Ancient Hellenistic](https://www.hellenisticastrology.com/) astrology, especially the work of [Chris Brennan](https://www.chrisbrennanastrologer.com/). This means your chart may be different from services that focus on modern systems, such as Co-Star. I have found that Hellenistic systems and techniques$^1$ provide more accurate and comprehensive readings, especially for dividing the life into thematic chapters and assessing planetary influence. I am also deeply indebted to the writing of [Alice Sparkly Kat](https://www.alicesparklykat.com/postcolonialastrology/), and aspire for my astrology to work in service of those struggling for liberatory futures.
+My lineage is mostly based in [Ancient Hellenistic](https://www.hellenisticastrology.com/) astrology, especially the work of [Chris Brennan](https://www.chrisbrennanastrologer.com/). This means your chart may be different from services that focus on modern systems, such as Co-Star. I have found that Hellenistic systems and techniques provide more accurate and comprehensive readings, especially for dividing the life into thematic chapters and assessing planetary influence. I am also deeply indebted to the writing of [Alice Sparkly Kat](https://www.alicesparklykat.com/postcolonialastrology/), and aspire for my astrology to work in service of those struggling for liberatory futures.
 
 My readings use the whole sign house system, the tropical zodiac, and a mix of traditional and modern house significations. I also make heavy use of zodiacal releasing, annual profections, and the master of the nativity. 
 
