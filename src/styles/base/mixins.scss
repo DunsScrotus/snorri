@@ -4,9 +4,9 @@
 // Media queries ======================================================
 
 @mixin is-max-tablet{
-	@media screen and (max-width: $media-tablet){ @content }
+	@media screen and (max-width: var(--media-tablet)){ @content }
 }
 
 @mixin is-phone{
-	@media screen and (max-width: $media-phone){ @content }
+	@media screen and (max-width: var(--media-phone)){ @content }
 }

@@ -3,7 +3,7 @@ import Navigation from './Navigation.astro';
 ---
 <header>
 	<div class="nav-logo">
-		<img src="/images/logo-snorri-of-the-stars.png" alt="Snorri of the Stars logo - Bunny in watercolor">
+		<img src="/images/logo-snorri-of-the-stars.png" alt="Snorri of the Stars logo - Bunny in watercolor" width="80px" height="80px">
 		<a href="/" class="logo">
 			Snorri of the Stars
 		</a>
@@ -35,7 +35,21 @@ import Navigation from './Navigation.astro';
 	}
 	.nav-links {
 		display: flex;
+		flex-wrap: wrap;
 		align-items: center;
+		justify-content: center;
 		gap: .75em;
-	}
+		> a {
+			color: var(--color-foreground);
+			text-decoration: none;
+			padding: 0.3rem .6rem;
+			border: 1px dotted var(--color-foreground);
+			transition: background-color 0.05s;
+			&:hover{
+				border: 1px solid var(--color-foreground);
+			}
+			&.active{
+				background-color: #F8E8AD;
+			}
+		}
 </style>

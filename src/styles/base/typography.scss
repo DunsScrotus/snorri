@@ -39,10 +39,6 @@
 	font-family: Ronzino, system-ui, sans-serif;
 	font-size: 1.125rem;
 	line-height: 140%;
-	
-	@include is-max-tablet{
-		// font-size: 18px;
-	}
 
 	@include is-phone{
 		font-size: 1rem;

@@ -10,12 +10,12 @@ body{
 }
 
 .site{
-	padding: 2rem;
+	padding: 0 1rem;
 	max-width: 800px;
 	margin: 0 auto;
 
 	@include is-max-tablet{
-		padding: .2rem 1.2rem;
+		padding: .2rem 1rem;
 	}
 }
 
@@ -34,16 +34,4 @@ body{
 	font-size: 1.4rem;
 	color: var(--text-primary);
 	text-decoration: none;
-}
-
-.nav-link {
-	color: var(--color-foreground);
-	text-decoration: none;
-	padding: 0.3rem .6rem;
-	border: 1px dotted var(--color-foreground);
-	transition: background-color 0.05s;
-}
-.nav-link:hover {
-	// background-color: #DAD1C1;
-	border: 1px solid var(--color-foreground);
 }

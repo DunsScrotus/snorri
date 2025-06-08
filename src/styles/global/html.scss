@@ -43,7 +43,7 @@ h1, .heading-1{
 }
 h2, .heading-2{
     @include text-h2;
-	margin: 3.33rem 0 1rem;
+	margin: 2rem 0 1rem;
 }
 h3, .heading-3{
     @include text-h3;

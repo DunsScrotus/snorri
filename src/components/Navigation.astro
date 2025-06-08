@@ -1,14 +1,16 @@
 ---
 import { getEntry } from 'astro:content';
-const about = await getEntry('page', 'about');
-//const writing = await getEntry('page', 'writing');
-const offerings = await getEntry('page', 'offerings');
+
+
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname.slice(1); // remove the first "/"
+const settings = await getEntry('page', 'settings');
+
 ---
 
-<a href={about.slug} class="nav-link">{about.data.title}</a>
-<!-- <a href="/writing" class="nav-link">Writing</a> -->
-<!-- <a href={writing.slug} class="nav-link">{writing.data.title}</a> -->
-<a href={`/${offerings.slug}`} class="nav-link">{offerings.data.title}</a>
-<!-- <a href="/tags" class="nav-link">. . .</a> -->
-<!-- <a href="/tags" class="nav-link">Tags</a> -->
+<a href="/" class={currentPath === "" ? "active" : ""}>Home</a>
+<a href="/about" class={currentPath === "about" ? "active" : ""}>About</a>
+<a href="/writing" class={currentPath === "writing" ? "active" : ""}>Writing</a>
+<a href="offerings" class={currentPath === "offerings" ? "active" : ""}>Offerings</a>
+<a target="_blank" href={settings.data.booking_link.url}>Book a consultation</a>
 
