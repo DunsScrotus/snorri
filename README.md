@@ -1,6 +1,11 @@
 # Snorri of the Stars
 
-https://snorri.vercel.app/
+https://snorri.rest
+
+## To preview edits
+in  terminal from snorri folder, run the command `npm run dev`
+this starts the local development environment, using your computer as a local server. any saved changes will be immediately visible at `localhost:4321` from your computer while the local server is running.
+
 
 ## To edit:
 
